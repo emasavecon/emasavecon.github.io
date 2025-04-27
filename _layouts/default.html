@@ -1,62 +1,110 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Emanuele Savini's personal website showcasing CV, research papers, and projects.">
-    <meta name="author" content="Emanuele Savini">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Emanuele Savini's personal website showcasing CV, research papers, and projects.">
+  <meta name="author" content="Emanuele Savini">
 
-    {% seo %}
-    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-    <!--[if lt IE 9]>
+  {% seo %}
+  <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+  <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
-    {% include head-custom.html %}
-    {% if site.google_analytics and jekyll.environment == 'production' %}
-    {% include analytics.html %}
-    {% endif %}
-    <title>Emanuele Savini - Personal Website</title>
-  </head>
-  <body>
-    <div class="wrapper">
-      <!-- Header -->
-      <header>
-        <h1><a href="{{ "/" | absolute_url }}">Emanuele Savini</a></h1>
+  <![endif]-->
+  {% include head-custom.html %}
+  {% if site.google_analytics and jekyll.environment == 'production' %}
+    {% include analytics.html %} 
+  {% endif %}
+  <title>Emanuele Savini - Personal Website</title>
+</head>
 
-        {% if site.logo %}
-        <img src="{{ '/assets/images/profile_2.jpeg' | relative_url }}" alt="Profile Image of Emanuele Savini" style="max-width: 150px; border-radius: 50%;">
-        {% endif %}
+<body>
+  <div class="wrapper">
+    <!-- Header -->
+    <header>
+      <h1><a href="{{ "/" | absolute_url }}">Emanuele Savini</a></h1>
 
-        <p>I’m a PhD student in Economics at the University of Warwick. My research interests are in macroeconomics with a focus on monetary and fiscal policy.</p>
+      {% if site.logo %}
+        <img src="{{ '/assets/img/profile_2.jpeg' | relative_url }}" alt="Profile Image of Emanuele Savini" style="max-width: 150px; border-radius: 50%;">
+      {% endif %}
 
-        <p class="view">
-          <a href="{{ '/docs/CV_Emanuele_Savini.pdf' | relative_url }}" target="_blank">Curriculum Vitae</a>
+      <p>I’m a PhD student in Economics at the University of Warwick. My research interests are in macroeconomics with a focus on monetary and fiscal policy.</p>
+
+      <p class="view">
+        <a href="{{ '/docs/CV_Emanuele_Savini.pdf' | relative_url }}" target="_blank">Curriculum Vitae</a>
+      </p>
+    </header>
+
+    <!-- Working Papers Section -->
+    <section>
+      <h2>Working Papers</h2>
+
+      <article>
+        <h3>Decomposing Monetary Policy Surprises: Shock, Information, and Policy Rule Revision</h3>
+        <p>
+          Joint work with 
+          <a href="https://www.giovanni-ricco.com/" target="_blank">Giovanni Ricco</a>.
         </p>
-      </header>
+        <p>
+          <a href="https://cepr.org/publications/dp20166" target="_blank">CEPR DP20166</a> |
+          <a href="{{ '/docs/Main-US.pdf' | relative_url }}" target="_blank">Working Paper</a> |
+          <a href="{{ '/docs/OnlineAppendix-US.pdf' | relative_url }}" target="_blank">Online Appendix</a>
+        </p>
+      </article>
 
-      <!-- Working Papers Section -->
-      <section>
-        <h2>Working Papers</h2>
-        <article>
-          <h3>Monetary Policy, Information, and Country Risk Shocks in the Euro Area</h3>
-          <p>
-            <a href="{{ '/docs/Main-EA.pdf' | relative_url }}" target="_blank">Working Paper</a> |
-            <a href="{{ '/docs/OnlineAppendix-EA.pdf' | relative_url }}" target="_blank">Online Appendix</a> |
-            <a href="{{ '/docs/EA-Instruments.xlsx' | relative_url }}" target="_blank">EA-Instruments</a>
-          </p>
-        </article>
-      </section>
+      <article>
+        <h3>Monetary Policy, Information, and Country Risk Shocks in the Euro Area</h3>
+        <p>
+          Joint work with 
+          <a href="https://www.giovanni-ricco.com/" target="_blank">Giovanni Ricco</a> 
+          and 
+          <a href="https://anshumaan-tuteja.github.io/" target="_blank">Anshumaan Tuteja</a>.
+        </p>
+        <p>
+          <a href="https://cepr.org/publications/dp19679" target="_blank">CEPR DP19679</a> |
+          <a href="{{ '/docs/Main-EA.pdf' | relative_url }}" target="_blank">Working Paper</a> |
+          <a href="{{ '/docs/OnlineAppendix-EA.pdf' | relative_url }}" target="_blank">Online Appendix</a> |
+          <a href="{{ '/docs/EA-Instruments.xlsx' | relative_url }}" target="_blank">EA-Instruments</a> - contact me!
+        </p>
+      </article>
 
-      <!-- Footer -->
-      <footer>
-        {% if site.github.is_project_page %}
+    </section>
+
+    <!-- Teaching Section -->
+    <section>
+      <h2>Teaching Experience</h2>
+
+      <article>
+        <h3>Applied Econometrics</h3>
+        <p>
+          Teaching Assistant at the <em>University of Warwick</em> during the academic years 2022-2023 and 2023-2024. Below are my teaching evaluations and comments:
+        </p>
+        <p>
+          <a href="{{ '/docs/Personal Module evaluation results for Emanuele Savini - Autumn Term 2022-23.pdf' | relative_url }}" target="_blank">Autumn Term 2022-2023</a> |
+          <a href="{{ '/docs/EC203 Module evaluation results for Emanuele Savini - Spring Term 2022-23 (15).pdf' | relative_url }}" target="_blank">Spring Term 2022-2023</a> |
+          <a href="{{ '/docs/Personal Module evaluation results for Emanuele Savini - Autumn Term 2023-24.pdf' | relative_url }}" target="_blank">Autumn Term 2023-2024</a> |
+          <a href="{{ '/docs/Comments_spring2023_2024.png' | relative_url }}" target="_blank">Spring Term 2023-2024</a>
+        </p>
+      </article>
+
+      <article>
+        <h3>Elements of Machine Learning for Business</h3>
+        <p>
+          Teaching Assistant at <em>London Business School</em> during the summer terms of 2023 and 2024.
+        </p>
+      </article>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      {% if site.github.is_project_page %}
         <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
-  </body>
-</html>
+      {% endif %}
+      <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+    </footer>
+  </div>
 
+  <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+</body>
+</html>
