@@ -17,6 +17,13 @@
     {% include analytics.html %} 
   {% endif %}
   <title>Personal Website</title>
+  <style>
+    .paper-abstract { margin: -8px 0 24px; }
+    .paper-abstract summary { width: fit-content; color: #267cb9; cursor: pointer; font-size: 0.9em; }
+    .paper-abstract summary:hover { text-decoration: underline; }
+    .paper-abstract summary:focus-visible { outline: 2px solid #267cb9; outline-offset: 4px; }
+    .paper-abstract p { margin: 12px 0 0; }
+  </style>
 </head>
 
 <body>
@@ -66,6 +73,10 @@
           <a href="{{ '/docs/Main_WAEMU.pdf' | relative_url }}" target="_blank">Working Paper</a> |
           <a href="{{ '/docs/Appendix_WAEMU.pdf' | relative_url }}" target="_blank">Online Appendix</a>
         </p>
+        <details class="paper-abstract">
+          <summary>Abstract</summary>
+          <p>Formed in the aftermath of the Franc Zone, the West African Economic and Monetary Union offers a rare setting to examine monetary transmission in an understudied corner of the Trilemma – operating under a hard peg to the euro and binding capital controls. This study analyses how domestic monetary shocks propagate internally and how the WAEMU is affected by external spillovers from the European Central Bank and the Federal Reserve. Using monthly national data and bilateral VARs with state-of-the-art identification, the analysis uncovers marked sensitivity to both conventional and unconventional shocks.</p>
+        </details>
       </article>
 
       <article>
@@ -79,6 +90,10 @@
           <a href="{{ '/docs/Main-US.pdf' | relative_url }}" target="_blank">Working Paper</a> |
           <a href="{{ '/docs/OnlineAppendix-US.pdf' | relative_url }}" target="_blank">Online Appendix</a>
         </p>
+        <details class="paper-abstract">
+          <summary>Abstract</summary>
+          <p>Two explanations exist for the output and price puzzles arising from the identification of monetary policy shocks with high-frequency monetary surprises: the ‘information channel’ and the ‘Fed response to news’ hypothesis. We argue that the information channel better explains these anomalies, aligns more closely with empirical evidence, and relies on fewer assumptions. Using a model of imperfect information incorporating both monetary policy shocks and policy rule deviations, we derive testable implications to distinguish the two hypotheses. Our findings show that policy rule deviations have minimal impact, while information effects drive the observed puzzles, resolving key inconsistencies in the literature.</p>
+        </details>
       </article>
 
       <article>
@@ -94,6 +109,10 @@
           <a href="{{ '/docs/Main-EA_version2.pdf' | relative_url }}" target="_blank">Working Paper</a> |
           <a href="{{ '/docs/OnlineAppendix-EA_version2.pdf' | relative_url }}" target="_blank">Online Appendix</a> 
         </p>
+        <details class="paper-abstract">
+          <summary>Abstract</summary>
+          <p>The high-frequency market responses to ECB policy announcements bundle four types of policy shocks – conventional, forward guidance, quantitative easing, and asymmetric country risk – together with information surprises. The latter create powerful confounding effects for the identification of policy shock through non-linear information effects, prominent during episodes of acute market stress in euro area crises. These effects explain the puzzles in the responses of macroeconomic variables reported in studies using instruments from high-frequency data. Information-robust IVs yield, in VAR models, dynamic responses to monetary tightening with standard contractionary effects on output and prices.</p>
+        </details>
       </article>
 
     </section>
