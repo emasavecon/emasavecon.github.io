@@ -23,10 +23,12 @@
     .paper-abstract summary:hover { text-decoration: underline; }
     .paper-abstract summary:focus-visible { outline: 2px solid #267cb9; outline-offset: 4px; }
     .paper-abstract p { margin: 12px 0 0; }
-    .jmp-title { display: flex; align-items: baseline; gap: 16px; margin-bottom: 12px; }
-    .jmp-title span { flex: 1; min-width: 0; }
-    .jmp-title a { flex-shrink: 0; font-size: 14px; font-weight: normal; }
-    .jmp-abstract { margin-top: 0; }
+    .jmp-paper h3 { margin: 0 0 16px; font-size: 21px; line-height: 1.4; }
+    .jmp-paper .jmp-download { margin: 0 0 14px; }
+    .jmp-paper .jmp-pdf { display: inline-block; padding: 4px 13px; border: 1px solid #d5dce3; border-radius: 4px; font-size: 13px; font-weight: normal; line-height: 1.6; }
+    .jmp-paper .jmp-pdf:hover, .jmp-paper .jmp-pdf:focus { background: #f5f6f7; border-color: #9aa8b5; }
+    .jmp-paper .jmp-pdf:focus-visible { outline: 2px solid #267cb9; outline-offset: 3px; }
+    .jmp-paper .jmp-abstract { margin: 0 0 24px; }
   </style>
 </head>
 
@@ -55,11 +57,11 @@
     <!-- Job Market Paper Section -->
     <section>
       <h2>Job Market Paper</h2>
-      <article>
-        <h3 class="jmp-title">
-          <span>Supply-Side Information and Monetary Policy Surprises</span>
-          <a href="{{ '/docs/jmp_emanuele_savini.pdf' | relative_url }}" target="_blank">PDF</a>
-        </h3>
+      <article class="jmp-paper">
+        <h3>Supply-Side Information and Monetary Policy Surprises</h3>
+        <p class="jmp-download">
+          <a class="jmp-pdf" href="{{ '/docs/jmp_emanuele_savini.pdf' | relative_url }}" target="_blank" rel="noopener" aria-label="Read Supply-Side Information and Monetary Policy Surprises (PDF)">PDF</a>
+        </p>
         <details class="paper-abstract jmp-abstract">
           <summary>Abstract</summary>
           <p>Monetary policy surprises, measured using high-frequency asset price revisions around central bank announcements, are the leading tool for identifying the effects of unexpected monetary actions. Recent research shows, however, that they partly reflect the Federal Reserve’s information about demand conditions. This paper shows that supply conditions also enter these surprises, as revealed by the comovement of interest rates and the exchange rate. When a supply shock hits and the Fed is expected to raise rates while tolerating some supply-driven inflation, surprises signal higher medium-term rates and dollar depreciation. Accounting for this component helps explain why previous estimates find little decline in prices after tighter forward guidance.</p>
