@@ -1,0 +1,50 @@
+/* Responsive academic layout; typography and content retain the existing theme. */
+* { box-sizing: border-box; }
+body { margin: 0; padding: 0; }
+.wrapper { display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 0 64px; align-items: start; width: auto; max-width: 1080px; margin: 0 auto; padding: 44px 30px 50px; }
+header.profile { position: static; float: none; width: auto; padding: 0; min-width: 0; }
+.profile h1 { margin-bottom: 20px; }
+.profile-photo { display: block; width: 190px; height: 190px; max-width: 100%; object-fit: cover; object-position: center 20%; border-radius: 8px; margin-bottom: 20px; }
+.profile p { margin-bottom: 20px; }
+.profile .view { position: static; line-height: 1.9; }
+main { min-width: 0; }
+.section-nav { display: flex; flex-wrap: wrap; gap: 8px 22px; margin: 0 0 26px; padding-bottom: 14px; border-bottom: 1px solid #e5e5e5; font-size: 13px; }
+.section-nav a { padding: 3px 0; }
+main section { float: none; width: auto; margin: 0; padding: 0 0 28px; border: 0; }
+main section + section { padding-top: 28px; border-top: 1px solid #e5e5e5; }
+main h2 { font-size: 21px; margin: 0 0 22px; scroll-margin-top: 24px; }
+main h3 { font-size: 16px; line-height: 1.45; margin: 0 0 12px; }
+main article { margin: 0; padding: 0; }
+main article + article { margin-top: 24px; padding-top: 24px; border-top: 1px solid #f0f0f0; }
+main article > p { margin: 0 0 14px; }
+main a { overflow-wrap: anywhere; }
+.paper-abstract { margin: 0; }
+.paper-abstract summary { width: fit-content; color: #267cb9; cursor: pointer; font-size: 0.9em; padding: 2px 0; }
+.paper-abstract summary:hover { text-decoration: underline; }
+.paper-abstract p { margin: 12px 0 0; line-height: 1.7; }
+a:focus-visible, summary:focus-visible { outline: 2px solid #267cb9; outline-offset: 4px; }
+.skip-link { position: absolute; top: -80px; left: 16px; padding: 8px 12px; background: #fff; z-index: 2; }
+.skip-link:focus { top: 8px; }
+@media screen and (max-width: 960px) {
+  div.wrapper { width: auto; margin: 0 auto; grid-template-columns: 240px minmax(0, 1fr); gap: 0 36px; padding: 32px 24px; }
+}
+@media screen and (max-width: 800px) {
+  div.wrapper { display: block; padding: 28px 22px 36px; }
+  header.profile { margin-bottom: 28px; padding-bottom: 8px; border-bottom: 1px solid #e5e5e5; }
+  .profile p { max-width: 640px; }
+  .section-nav { gap: 8px 20px; }
+}
+@media screen and (max-width: 480px) {
+  body { padding: 0; }
+  div.wrapper { padding: 24px 20px 32px; }
+  .profile h1 { font-size: 27px; }
+  main h2 { font-size: 20px; }
+  .section-nav { gap: 8px 16px; }
+}
+@media print {
+  body { padding: 0; }
+  div.wrapper { display: block; padding: 0; }
+  header.profile { position: static; margin-bottom: 24px; }
+  .section-nav, .skip-link { display: none; }
+  main section { float: none; width: auto; }
+}
