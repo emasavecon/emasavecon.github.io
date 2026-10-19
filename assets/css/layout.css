@@ -10,7 +10,7 @@ a:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outli
 header.profile { position: static; float: none; width: auto; height: auto; max-height: none; overflow: visible; align-self: start; padding: 0; }
 .profile h1 { margin: 0 0 24px; font-family: Georgia, "Times New Roman", serif; font-size: 31px; font-weight: 400; line-height: 1.2; letter-spacing: -0.7px; }
 .profile h1 a { color: var(--ink); }
-.profile-photo { display: block; width: 200px; height: 200px; max-width: 100%; object-fit: cover; object-position: center 20%; border-radius: 8px; margin-bottom: 24px; }
+.profile-photo { display: block; width: 280px; height: auto; aspect-ratio: 1; max-width: 100%; object-fit: cover; object-position: center 20%; border-radius: 8px; margin-bottom: 24px; }
 .profile p { margin: 0 0 18px; color: var(--muted); font-size: 14px; }
 .profile .job-market-note { padding-left: 13px; border-left: 3px solid var(--accent); color: var(--ink); }
 .job-market-note strong { font-weight: 600; }
@@ -47,7 +47,7 @@ footer small { font-size: inherit; }
   .wrapper { display: block; padding: 30px 22px 22px; }
   header.profile { margin: 0 0 34px; padding: 0 0 28px; border: 0; border-bottom: 1px solid var(--line); }
   .profile h1 { font-size: 32px; margin-bottom: 20px; }
-  .profile-photo { width: 190px; height: 190px; }
+  .profile-photo { width: 240px; height: auto; }
   .profile p { max-width: 540px; font-size: 15px; }
   main h3 { font-size: 21px; }
   main section { margin-bottom: 38px; }
