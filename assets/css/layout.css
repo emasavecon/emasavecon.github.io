@@ -8,8 +8,6 @@ header.profile { position: static; float: none; width: auto; padding: 0; min-wid
 .profile p { margin-bottom: 20px; }
 .profile .view { position: static; line-height: 1.9; }
 main { min-width: 0; }
-.section-nav { display: flex; flex-wrap: wrap; gap: 8px 22px; margin: 0 0 26px; padding-bottom: 14px; border-bottom: 1px solid #e5e5e5; font-size: 13px; }
-.section-nav a { padding: 3px 0; }
 main section { float: none; width: auto; margin: 0; padding: 0 0 28px; border: 0; }
 main section + section { padding-top: 28px; border-top: 1px solid #e5e5e5; }
 main h2 { font-size: 21px; margin: 0 0 22px; scroll-margin-top: 24px; }
@@ -32,19 +30,17 @@ a:focus-visible, summary:focus-visible { outline: 2px solid #267cb9; outline-off
   div.wrapper { display: block; padding: 28px 22px 36px; }
   header.profile { margin-bottom: 28px; padding-bottom: 8px; border-bottom: 1px solid #e5e5e5; }
   .profile p { max-width: 640px; }
-  .section-nav { gap: 8px 20px; }
 }
 @media screen and (max-width: 480px) {
   body { padding: 0; }
   div.wrapper { padding: 24px 20px 32px; }
   .profile h1 { font-size: 27px; }
   main h2 { font-size: 20px; }
-  .section-nav { gap: 8px 16px; }
 }
 @media print {
   body { padding: 0; }
   div.wrapper { display: block; padding: 0; }
   header.profile { position: static; margin-bottom: 24px; }
-  .section-nav, .skip-link { display: none; }
+  .skip-link { display: none; }
   main section { float: none; width: auto; }
 }
